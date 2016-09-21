@@ -1,0 +1,15 @@
+diff a/Calculadora.java b/Calculadora.java	(rejected hunks)
+@@ -19,11 +19,11 @@
+                 case 1:
+                     System.out.println(
+                             "Introduce el primer número:");
+-                    numero1 = reader.nextFloat();
++                    numero1 = reader.nextInt();
+ 
+                     System.out.println(
+                             "Introduce el segundo número:");
+-                    numero2 = reader.nextFloat();
++                    numero2 = reader.nextInt();
+ 
+                     resultado = numero1 + numero2;
+ 
