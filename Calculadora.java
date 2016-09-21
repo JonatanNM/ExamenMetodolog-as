@@ -8,10 +8,9 @@ public class Calculadora {
 
         Scanner sc = new Scanner(System.in);
         Scanner reader = new Scanner(System.in);
-        float numero1;
-        float numero2;
-        float resultado;
-        float aux;
+        int numero1;
+        int numero2;
+        int resultado;
         int op;
         do {
             mostrarMenu();
@@ -20,11 +19,11 @@ public class Calculadora {
                 case 1:
                     System.out.println(
                             "Introduce el primer número:");
-                    numero1 = reader.nextFloat();
+                    numero1 = reader.nextInt();
 
                     System.out.println(
                             "Introduce el segundo número:");
-                    numero2 = reader.nextFloat();
+                    numero2 = reader.nextInt();
 
                     resultado = numero1 + numero2;
 
