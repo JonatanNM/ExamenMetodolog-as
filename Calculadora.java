@@ -8,9 +8,10 @@ public class Calculadora {
 
         Scanner sc = new Scanner(System.in);
         Scanner reader = new Scanner(System.in);
-        int numero1;
-        int numero2;
-        int resultado;
+        float numero1;
+        float numero2;
+        float resultado;
+        float aux;
         int op;
         do {
             mostrarMenu();
@@ -19,11 +20,11 @@ public class Calculadora {
                 case 1:
                     System.out.println(
                             "Introduce el primer número:");
-                    numero1 = reader.nextInt();
+                    numero1 = reader.nextFloat();
 
                     System.out.println(
                             "Introduce el segundo número:");
-                    numero2 = reader.nextInt();
+                    numero2 = reader.nextFloat();
 
                     resultado = numero1 + numero2;
 
@@ -33,11 +34,11 @@ public class Calculadora {
                 case 2:
                     System.out.println(
                             "Introduce el primer número:");
-                    numero1 = reader.nextInt();
+                    numero1 = reader.nextFloat();
 
                     System.out.println(
                             "Introduce el segundo número:");
-                    numero2 = reader.nextInt();
+                    numero2 = reader.nextFloat();
 
                     resultado = numero1 - numero2;
 
@@ -47,11 +48,11 @@ public class Calculadora {
                 case 3:
                     System.out.println(
                             "Introduce el primer número:");
-                    numero1 = reader.nextInt();
+                    numero1 = reader.nextFloat();
 
                     System.out.println(
                             "Introduce el segundo número:");
-                    numero2 = reader.nextInt();
+                    numero2 = reader.nextFloat();
 
                     resultado = numero1 * numero2;
 
@@ -61,11 +62,18 @@ public class Calculadora {
                 case 4:
                     System.out.println(
                             "Introduce el primer número:");
-                    numero1 = reader.nextInt();
+                    numero1 = reader.nextFloat();
 
                     System.out.println(
                             "Introduce el segundo número:");
-                    numero2 = reader.nextInt();
+                    numero2 = reader.nextFloat();
+                    
+                    if (numero1>numero2) {
+                        aux=numero1;
+                        numero1=numero2;
+                        numero2=aux;
+                        
+                    }
 
                     resultado = numero1 / numero2;
 
